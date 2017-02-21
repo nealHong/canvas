@@ -1,0 +1,151 @@
+/* --------------------- 页面重置 CSS ----------------------- */
+body,html,div,h1,h2,h3,h4,h5,ul,ol,li,a,img,input,span,p,i,b,dl,dd,dt,textarea{margin:0;padding:0;box-sizing: border-box;}
+body{font-size:0.12rem;font-family: Arial,"Microsoft YaHei";display: none;}
+img{border:0;display:block;}
+a{text-decoration:none;color: #000;}
+ul,ol,dl{list-style: none;}
+input,textarea,button{border:0;-webkit-appearance: none;font-family: Arial,"Microsoft YaHei";}
+h1,h2,h3,h4,h5,b{font-weight: 100;}
+i{font-style: normal;}
+div,input,textarea{-webkit-tap-highlight-color:rgba(255,0,0,0);outline: 0;}
+/* --------------------- single CSS ----------------------- */
+/* display */
+.dn{display:none;}
+.di{display:inline;}
+.db{display:block;}
+.dib{display:inline-block;vertical-align: middle;}
+.dbox{display: box;display: -webkit-box;display: -moz-box;}
+/* position */
+.rel{position:relative;}
+.abs{position:absolute;}
+/* cursor */
+.poi{cursor:pointer;}
+.def{cursor:default;}
+/* overflow */
+.ovh{overflow:hidden;}
+.ova{overflow:auto;}
+/* visibility */
+.vh{visibility:hidden;}
+.vv{visibility:visible;}
+/* ------------------- multiply CSS ------------------ */
+/* 块状元素水平居中 */
+.auto{margin-left:auto; margin-right:auto;}
+/* 单行文字溢出虚点显 示*/
+.ell{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+/* 2行文字溢出虚点显 示*/
+.ell2{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+/* 3行文字溢出虚点显 示*/
+.ell3{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+/* 大小不定元素垂直居中 */
+.dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}
+
+
+
+/*---------------------  头部导航 CSS -----------------------*/
+#head_nav{
+	width: 100%;
+	text-align: center;
+	border-bottom: 0.02rem solid #f5f5f5;
+	background-color: #fff;
+	z-index: 9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-sizing: content-box;
+}
+#head_nav h2{
+	font-size: 0.34rem;
+	color: #3e3e3e;
+	line-height: 0.86rem;
+}
+#head_nav h3.for_back{
+	position: absolute;
+	left: 0;
+	padding: 0 0.3rem;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+#head_nav h3.for_back img{
+	width: 0.2rem;
+}
+
+/* --------------------- 图片延迟加载（lazyImg()） CSS ----------------------- */
+img[imgsrc] {opacity: .4;}
+.opa1{opacity: 1;-webkit-transition: opacity .5s ease-in;}
+
+/* --------------------- 360°旋转动画  CSS ----------------------- */
+.rotate_365{-webkit-animation: bouncede 1s infinite linear;animation: bouncede 1s infinite linear;-webkit-animation-fill-mode: both;-moz-animation-fill-mode: both;animation-fill-mode: both;
+}
+@-webkit-keyframes bouncede { 0% { -webkit-transform: rotate(0deg) } 100% {-webkit-transform: rotate(360deg) } }
+@keyframes bouncede { 0% { transform: rotate(0deg) } 100%{transform: rotate(360deg) } }
+
+/* --------------------- 上拉刷新下拉加载  CSS ----------------------- */
+.myIndex_Con{
+	background-color: #fff;
+}
+/* 提示样式  */
+.tip{
+	padding-bottom: 0.2rem;
+	text-align: center;
+}
+.tip:first-child{
+	visibility: hidden;
+}
+.tip h5{
+	margin-bottom: 0.1rem;
+	font-size: 0.26rem;
+	color: #787878;
+}
+.tip span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.26rem;
+	color: #787878;
+	
+}
+.ico{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin-right: 0.1rem;
+	position: relative;
+	/*margin-top: -2px;*/
+}
+.ico img{
+	width: 100%;
+	height: 100%;
+}
+.ico .zhuan{
+	border-radius: 50%;
+}
+/* 上拉加载 */
+.down_tip{
+	line-height: 0.8rem;
+	padding-bottom: 0;
+	display: none;
+}
+
+/* --------------------- 提示框（toast()）  CSS ----------------------- */
+#message {
+	width: 100%;
+	position: fixed;
+	bottom: 60px;
+	z-index: 11001;
+	text-align: center;
+	font-size: 0.26rem;
+}
+#message div {
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	border-radius: 0.1rem;
+	color: #fff;
+	width: 60%;
+	padding: 0.3rem;
+	margin:0 auto;
+}
+
+
+
+
